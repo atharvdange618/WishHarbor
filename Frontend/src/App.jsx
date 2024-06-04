@@ -1,8 +1,12 @@
 import React from 'react'
+import Design1 from './Design1'
+import './App.css'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Design1 />
+    </div>
   )
 }
 
