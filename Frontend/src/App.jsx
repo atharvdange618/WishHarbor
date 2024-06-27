@@ -1,11 +1,13 @@
 import React from 'react'
-import Design1 from './Design1'
 import './App.css'
+import HomePage from './pages/HomePage'
+import Design1 from './Design1'
+
 
 const App = () => {
   return (
     <div>
-      <Design1 />
+      <HomePage />
     </div>
   )
 }
