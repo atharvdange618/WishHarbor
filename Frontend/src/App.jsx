@@ -1,14 +1,18 @@
-import React from 'react'
-import './App.css'
-import Design1 from './Design1'
-
+import React from 'react';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import UserProfile from './components/UserProfile/UserProfile';
 
 const App = () => {
   return (
-    <div>
-      <Design1 />
-    </div>
-  )
-}
+    <Routes>
+      <Route exact path="/" element={<HomePage />}>
+      </Route>
+      <Route path="/profile" element={<UserProfile />}>
+      </Route>
+    </Routes>
+  );
+};
 
-export default App
+export default App;

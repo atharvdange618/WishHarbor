@@ -1,6 +1,7 @@
 import React from 'react'
 import PersonIcon from '@mui/icons-material/Person';
 import { Card, CardContent, Avatar, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Cards = ({ wishlist }) => {
     return (
@@ -20,9 +21,11 @@ const Cards = ({ wishlist }) => {
                             A curated collection of unique items.
                         </Typography>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Avatar sx={{ bgcolor: 'grey.300' }} src="https://i.pinimg.com/736x/b0/df/a3/b0dfa38aebd725361ce4ca7afc718cc5.jpg">
-                                <PersonIcon />
-                            </Avatar>
+                            <Link to='/profile'>
+                                <Avatar sx={{ bgcolor: 'grey.300' }} src="https://i.pinimg.com/736x/b0/df/a3/b0dfa38aebd725361ce4ca7afc718cc5.jpg">
+                                    <PersonIcon />
+                                </Avatar>
+                            </Link>
                             <Button variant="outlined" size="small">
                                 View Wishlist
                             </Button>
